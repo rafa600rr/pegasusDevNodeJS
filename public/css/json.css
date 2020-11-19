@@ -1,0 +1,306 @@
+/* TABELA */
+.tabelaListar{
+    width: 100%;
+}
+
+.tabelaListar table{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.tabelaListar th{
+    background-color: rgb(255, 166, 0);
+    padding: 10px;
+    font-family: principal;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tabelaListar td{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: principal;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#remove{
+    text-align: center;
+}
+
+.tabelaListar #remove a{
+    font-family: principal;
+    font-weight: bold;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    padding: 8px;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+}
+
+.tabelaListar #remove a:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgb(160, 2, 2);
+}
+
+#edit{
+    text-align: center;
+}
+
+.tabelaListar #edit a{
+    font-family: principal;
+    font-weight: bold;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 255);
+    padding: 8px;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+}
+
+.tabelaListar #edit a:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgb(0, 0, 255);
+}
+
+#cancel{
+    width: 98%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(255, 0, 0);
+    transition: background-color 0.5s;
+}
+
+#cancel a{
+    text-decoration: none;
+    font-family: principal;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#cancel:hover{
+    cursor: pointer;
+    background-color: rgb(253, 17, 17);
+}
+
+/* SEARCH FIELD */
+.json form{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.json input[type="search"]{
+    width: 75%;
+    margin-right: 0;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid rgb(255, 166, 0);
+    color: rgb(255, 166, 0);
+    background-color: #000;
+}
+
+.json input[type="button"]{
+    width: 20%;
+    margin-left: -5px;
+    font-family: principal;
+    font-weight: bold;
+    padding: 22px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgb(255, 166, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 166, 0);
+    transition: background-color 0.5s;
+}
+
+.json input[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgb(255, 196, 0);
+}
+
+/* CARD STAR WARS */
+.api{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.api figure{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.api figure img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.api figure li{
+    list-style: none;
+    line-height: 25px;
+    color: rgb(255, 166, 0);
+}
+
+.api figcaption{
+    background-color: rgb(0, 0, 0);
+    margin-top: -3px;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* ADMIN SECTION */
+#link{
+    width: 110px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+#link:hover{
+    background-color: rgb(255, 166, 0);
+}
+
+#link a{
+    font-family: principal;
+    color: rgb(255, 166, 0);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#link a:hover{
+    color: #000;
+}
+
+/* API REGISTRATION */
+.apiRegistration{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.apiRegistration form{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.apiRegistration label{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.apiRegistration input[type="text"]{
+    width: 94%;
+    background-color: #000;
+    border: none;
+    border-bottom: 1px solid rgb(255, 166, 0);
+    color: rgb(255, 166, 0);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.apiRegistration input[type="submit"]{
+    width: 98%;
+    font-family: principal;
+    font-size: 20px;
+    color: #000;
+    background-color: rgb(255, 166, 0);
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+    transition: background-color 0.5s;
+}
+
+.apiRegistration input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(255, 196, 0);
+}
+
+/* MENU TO EDIT THE API */
+#menuApi{
+    width: 15%;
+    float: left;
+    margin-top: 45px;
+}
+
+.navApi{
+    width: 100%;
+    padding: 10px;
+}
+
+.navApi nav{
+    text-align: center;
+}
+
+.navApi li:nth-child(1){
+    background-color: rgb(255, 166, 0);
+    transition: box-shadow 0.5s;
+}
+
+.navApi li:nth-child(2){
+    background-color: rgb(2, 167, 2);
+    transition: box-shadow 0.5s;
+}
+
+.navApi li:nth-child(3){
+    background-color: rgb(1, 1, 153);
+    transition: box-shadow 0.5s;
+}
+
+.navApi li:nth-child(4){
+    background-color: rgb(160, 2, 2);
+    transition: box-shadow 0.5s;
+}
+
+.navApi li:nth-child(1):hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgb(255, 166, 0);
+}
+
+.navApi li:nth-child(2):hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgb(2, 167, 2);
+}
+
+.navApi li:nth-child(3):hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgb(1, 1, 153);
+}
+
+.navApi li:nth-child(4):hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgb(160, 2, 2);
+}
+
+.navApi li{
+    width: 83%;
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    margin:10px;
+    border-radius: 5px;
+}
+
+.navApi li a{
+    width: 80%;
+    text-decoration: none;
+    font-family: principal;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    padding: 8px 25px;
+}

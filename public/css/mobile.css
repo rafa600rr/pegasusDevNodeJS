@@ -1,0 +1,294 @@
+@font-face{
+    font-family: "principal";
+    src: url(../fonts/earthorbiter.ttf);
+}
+
+.col-mobile-1{width:8.33%}
+.col-mobile-2{width:16.66%}
+.col-mobile-3{width:25%}
+.col-mobile-4{width:33.33%}
+.col-mobile-5{width:41.66%}
+.col-mobile-6{width:50%}
+.col-mobile-7{width:58.33%}
+.col-mobile-8{width:66.66%}
+.col-mobile-9{width:75%}
+.col-mobile-10{width:83.33%}
+.col-mobile-11{width:91,66%}
+.col-mobile-12{width:100%}
+
+/* FORMATION P, H1, H2, H3 */
+h1{
+    font-family: principal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 5px;
+}
+
+h2{
+    font-family: principal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* DESKTOP MENU */
+.desktopMenuNav{
+    display: none;
+}
+
+/* MOBILE MENU SANDUICHE*/
+#checkboxMenu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 14px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    padding: 1px;
+    border-radius: 30px;
+    background-color: rgb(255, 166, 0);
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0px;
+}
+
+label span:nth-child(2){
+    top: 8px;
+}
+
+label span:nth-child(3){
+    top: 16px;
+}
+
+#checkboxMenu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkboxMenu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkboxMenu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/* MOVEL SIDE MENU */
+.movelSideMenu{
+    display: none;
+    position: fixed;
+    top: 36px;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    margin-left: 100px;
+    background-color: #000;
+}
+
+.movelSideMenu li{
+    font-style: none;
+}
+
+.movelSideMenu a{
+    display: block;
+    line-height: 30px;
+    padding: 5px;
+    font-family: principal;
+    font-size: 10px;
+    color: rgb(255, 166, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+.movelSideMenu a:hover{
+    background-color: rgb(255, 166, 0);
+    color: #000;
+    font-weight: bold;
+}
+
+/* MENU + CAROUSEL */
+.menuCarousel{
+    display: block;
+    border-bottom: 1px solid rgb(255, 166, 0);
+}
+
+/* SIDE IMAGE MENU */
+.sideImageMenu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 3px;
+    padding-top: 20%;
+    background-color: #000;
+    border-bottom: 0.5px solid rgb(255, 166, 0);
+}
+
+.sideImageMenu a{
+    text-align: center;
+}
+
+.sideImageMenu img{
+    width: 50%;
+}
+
+/* CAROUSEL */
+.carousel{
+    width: 95%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.carousel button{
+    width: 20px;
+    height: 20px;
+}
+
+/* MENU TO EDIT THE API */
+#menuApi{
+    margin: 0px auto;
+    width: 100%;
+    padding: 0px;
+    float: none;
+}
+
+.navApi{
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.navApi li{
+    width: 28%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navApi li a{
+    font-size: 8px;
+    padding: 3px 15px;
+}
+
+/* CONTACT SECTION */
+.contact form{
+    width: 90%;
+}
+
+.contact form input[type="text"]{
+    width: 100%;
+}
+
+/* API REGISTRATION */
+.apiRegistration label{
+    font-size: 10px;
+    padding: 0px;
+}
+
+.tabelaListar th{
+    font-size: 8px;
+    padding: 5px;
+}
+
+.tabelaListar td{
+    font-size: 8px;
+    padding: 5px;
+}
+
+.tabelaListar a{
+    padding: 5px 8px;
+}
+
+/* TOOLS AND LANGUAGES LEARNED */
+.tools img{
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 7px;
+    background-color: rgb(255, 166, 0);
+}
+
+/* SEARCH FIELD */
+.json input[type="search"]{
+    width: 60%;
+    padding: 9px;
+    font-size: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.json input[type="button"]{
+    width: 30%;
+    padding: 11px;
+    font-size: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* CARD STAR WARS */
+.api{
+    margin: 20px auto;
+}
+
+.api figure li{
+    font-size: 10px;
+    line-height: 14px;
+}
+
+/* LINK ADMIN */
+#link{
+    width: 85px;
+}
+
+#link a{
+    padding: 10px;
+    font-size: 10PX;
+}
+
+/* LOGIN SECTION */
+.login{
+    width: 100%;
+}
+
+.login form{
+    padding-top: 15px;
+}
+
+.login form input[type="text"],
+            input[type="password"]{
+    padding: 15px;
+    margin: 8px;
+}
+
+.login form  input[type="submit"]{
+    padding: 15px;
+    margin: 8px;
+}
+
+
+/* FOOTER */
+footer{
+    height: 4%;
+}

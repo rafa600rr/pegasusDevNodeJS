@@ -1,0 +1,55 @@
+<!-- MENU TO EDIT THE API -->
+        <aside id="menuApi">
+            <nav class="navApi">
+                <li> <a href="/listAPI">listar</a> </li>
+                <li> <a href="/registerAPI">cadastrar</a> </li>
+                <li> <a href="/editAPI">editar</a> </li>
+                <li> <a href="/removeAPI">remover</a> </li>
+            </nav>
+        </aside>
+
+<!-- PAGE BODDY -->
+        <main class="mainContent
+                       col-desktop-7
+                       col-tablet-8
+                       col-mobile-12
+                       mainPadingJson">
+
+            <section  class="apiRegistration">
+                <h1>exibir informações da API!</h1>
+
+                <!-- TEBELA -->
+                <div class="tabelaListar">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NATUREZA</th>
+                                <th>NOME</th>
+                                <th>TEMPERATURA</th>
+                                <th>ÓRBITA</th>
+                                <th>DISTÂNCIA</th>
+                                <th>ATSMOFERA</th>
+                                <th>COMPOSIÇÃO</th>
+                            </tr>
+                        </thead>
+    
+                        {{#each list}}
+                        <tbody class="tableLister">
+                            <td>{{id}}</td>
+                            <td>{{natureza}}</td>
+                            <td>{{nome}}</td>
+                            <td>{{temperatura}}</td>
+                            <td>{{orbita}}</td>
+                            <td>{{distancia}}</td>
+                            <td>{{atsmofera}}</td>
+                            <td>{{compossicao}}</td>
+                        </tbody>
+                        {{/each}}
+
+                    </table>
+                </div>
+
+            </section>
+        </main>
+<script src="../js/carousel.js"></script>

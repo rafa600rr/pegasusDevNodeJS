@@ -1,0 +1,63 @@
+ <!-- MENU TO EDIT THE API -->
+        <aside id="menuApi">
+            <nav class="navApi">
+                <li> <a href="/listAPI">listar</a> </li>
+                <li> <a href="/registerAPI">cadastrar</a> </li>
+                <li> <a href="/editAPI">editar</a> </li>
+                <li> <a href="/removeAPI">remover</a> </li>
+            </nav>
+        </aside>
+
+<!-- PAGE BODDY -->
+        <main class="mainContent
+                       col-desktop-7
+                       col-tablet-8
+                       col-mobile-12">
+
+            <section  class="apiRegistration">
+                <h1>cadastre aqui as informações da API!</h1>
+                <h4 id="h4"></h4>
+
+                <form action="/register" method="POST" onsubmit="return validaApi()">
+
+                    <div>
+                        <label for="starNature">Natureza do corpo celeste</label>
+                        <input type="text" name="starNature" id="starNature">
+                    </div>
+
+                    <div>
+                        <label for="starName">Nome do corpo celeste</label>
+                        <input type="text" name="starName" id="starName">
+                    </div>
+
+                    <div>
+                        <label for="starTemperature">Temperatura do corpo celeste</label>
+                        <input type="text" name="starTemperature" id="starTemperature">
+                    </div>
+
+                    <div>
+                        <label for="starOrbit">Órbita do corpo celeste</label>
+                        <input type="text" name="starOrbit" id="starOrbit">
+                    </div>
+
+                    <div>
+                        <label for="starDistance">Distância do corpo celeste</label>
+                        <input type="text" name="starDistance" id="starDistance">
+                    </div>       
+                   
+                    <div>
+                        <label for="starAtsmophere">Atsmofera do corpo celeste</label>
+                        <input type="text" name="starAtsmophere" id="starAtsmophere">
+                    </div>
+
+                    <div>
+                        <label for="starComposition">Composição do corpo celeste</label>
+                        <input type="text" name="starComposition" id="starComposition">
+                    </div>
+
+                    <input type="submit" value="Cadastrar">
+
+                </form>
+            </section>
+        </main>
+<script src="../js/carousel.js"></script>

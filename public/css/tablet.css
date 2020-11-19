@@ -1,0 +1,239 @@
+.col-tablet-1{width:8.33%}
+.col-tablet-2{width:16.66%}
+.col-tablet-3{width:25%}
+.col-tablet-4{width:33.33%}
+.col-tablet-5{width:41.66%}
+.col-tablet-6{width:50%}
+.col-tablet-7{width:58.33%}
+.col-tablet-8{width:66.66%}
+.col-tablet-9{width:75%}
+.col-tablet-10{width:83.33%}
+.col-tablet-11{width:91,66%}
+.col-tablet-12{width:100%}
+
+/* FORMATION P, H1, H2, H3 */
+h1{
+    font-family: principal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 20px;
+}
+
+h2{
+    font-family: principal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 20px;
+}
+
+P{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    font-size: 13px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+/* DESKTOP MENU */
+.desktopMenuNav{
+    display: none;
+}
+
+/* MOBILE MENU SANDUICHE*/
+#checkboxMenu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgb(255, 166, 0);
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0px;
+}
+
+label span:nth-child(2){
+    top: 8px;
+}
+
+label span:nth-child(3){
+    top: 16px;
+}
+
+#checkboxMenu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkboxMenu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkboxMenu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/* MOVEL SIDE MENU */
+.movelSideMenu{
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #000;
+}
+
+.movelSideMenu li{
+    font-style: none;
+}
+
+.movelSideMenu a{
+    display: block;
+    line-height: 30px;
+    padding: 5px;
+    font-family: principal;
+    color: rgb(255, 166, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+.movelSideMenu a:hover{
+    background-color: rgb(255, 166, 0);
+    color: #000;
+    font-weight: bold;
+}
+
+/* MENU + CAROUSEL */
+.menuCarousel{
+    padding-top: 8.6%;
+    display: flex;
+    border-bottom: 1px solid rgb(255, 166, 0);
+}
+
+/* SIDE IMAGE MENU */
+.sideImageMenu{
+    width: 6%;
+    padding-top: 10px;
+    background-color: rgb(0, 0, 0);
+    border-right: 1px solid rgb(255, 166, 0);
+}
+
+.sideImageMenu img{
+    display: block;
+    width: 60%;
+    margin-bottom: 50%;
+    margin-left: 20%;
+}
+
+/* CAROUSEL */
+.carousel{
+    width: 95%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.carousel button{
+    width: 35px;
+    height: 35px;
+}
+
+/* MENU TO EDIT THE API */
+#menuApi{
+    margin-top: 30px;
+}
+
+.navApi{
+    width: 100%;
+    padding: 0px;
+}
+
+.navApi li{
+    width: 70%;
+    padding: 5px;
+}
+
+.navApi li a{
+    width: 80px;
+    line-height: 15px;
+    font-size: 10px;
+    padding: 5px;
+}
+
+/* API REGISTRATION */
+.apiRegistration label{
+    font-size: 10px;
+    padding: 0px;
+}
+
+/* CONTACT SECTION */
+.contact form{
+    width: 90%;
+}
+
+.contact form input[type="text"]{
+    width: 100%;
+}
+
+/* TOOLS AND LANGUAGES LEARNED */
+.tools img{
+    width: 12%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: rgb(255, 166, 0);
+}
+
+/* SEARCH FIELD */
+.json input[type="search"]{
+    padding: 12px;
+    font-size: 12px;
+}
+
+.json input[type="button"]{
+    padding: 14px;
+    font-size: 10px;
+}
+
+#link{
+    font-size: 10px;
+}
+
+.api{
+    margin: 30px auto;
+}
+
+/* LOGIN SECTION */
+.login form input[type="text"],
+            input[type="password"]{
+        padding: 15px;
+        margin: 8px;
+}
+
+.login form  input[type="submit"]{
+    padding: 15px;
+    margin: 8px;
+}

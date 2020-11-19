@@ -1,0 +1,28 @@
+ <!-- PAGE BODY -->
+        <main class="mainContent
+                    col-desktop-7
+                    col-tablet-8
+                    col-mobile-12">
+
+            <!-- CONTACT SECTION -->
+            <section class="contact">
+                <h1>Entre em contato</h1>
+                <h2>Envie-me uma sujestão ou crítica!</h2>
+                <h4 id="h4"></h4>
+
+                <form action="https://api.staticforms.xyz/submit" method="POST" onsubmit="return sendsForm()">
+                    <input type="hidden" name="accessKey" value="80a7ce8d-089a-4d5f-91a5-81f6641a1562">
+                    <input type="hidden" name="redirectTo" value="https://rafa600rr.github.io/mypage/myPage.HTML.CSS.JS/html/contact.html">
+                    
+                    <input type="text" name="name" id="name" placeholder="Nome completo">
+                    <input type="text" name="phone" id="tel" placeholder="Telefone">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+
+                    <small id="h6">Caracter 0/500</small>
+                    <textarea name="message" id="text" rows="10" placeholder="Digite aqui sua menssagem..." onkeyup="caracter(this.value)"></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+<script src="../js/carousel.js"></script>
