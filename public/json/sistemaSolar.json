@@ -9,6 +9,16 @@
       "atsmofera": "Oxigênio",
       "compossicao": "Água",
       "id": 1
+    },
+    {
+      "natureza": "Planeta",
+      "nome": "Marte",
+      "temperatura": " De -125 à 22 °C",
+      "orbita": "687 dias terrestres",
+      "distancia": "230 000 000 km",
+      "atsmofera": "Dióxido de carbono",
+      "compossicao": "Basalto vulcânico",
+      "id": 2
     }
   ]
 }

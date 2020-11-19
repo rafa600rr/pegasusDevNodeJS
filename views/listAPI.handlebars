@@ -19,35 +19,24 @@
                 <h1>exibir informações da API!</h1>
 
                 <!-- TEBELA -->
-                <div class="tabelaListar">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>NATUREZA</th>
-                                <th>NOME</th>
-                                <th>TEMPERATURA</th>
-                                <th>ÓRBITA</th>
-                                <th>DISTÂNCIA</th>
-                                <th>ATSMOFERA</th>
-                                <th>COMPOSIÇÃO</th>
-                            </tr>
-                        </thead>
-    
-                        {{#each list}}
-                        <tbody class="tableLister">
-                            <td>{{id}}</td>
-                            <td>{{natureza}}</td>
-                            <td>{{nome}}</td>
-                            <td>{{temperatura}}</td>
-                            <td>{{orbita}}</td>
-                            <td>{{distancia}}</td>
-                            <td>{{atsmofera}}</td>
-                            <td>{{compossicao}}</td>
-                        </tbody>
-                        {{/each}}
+                <div class="api">
 
-                    </table>
+                    {{#each list}}
+                    <ul>
+                        <h2>{{nome}}</h2>
+
+                        <li><b>ID:</b> <i>{{id}}</i></li>
+                        <li><b>NATUREZA:</b> <i>{{natureza}}</i></li>
+                        <li><b>NOME:</b> <i>{{nome}}</li>
+                        <li><b>TEMPERATURA:</b> <i>{{temperatura}}</i></li>
+                        <li><b>ÓRBITA:</b> <i>{{orbita}}</i></li>
+                        <li><b>DISTÂNCIA:</b> <i>{{distancia}}</i></li>
+                        <li><b>ATSMOFERA:</b> <i>{{atsmofera}}</i></li>
+                        <li><b>COMPOSIÇÃO:</b> <i>{{compossicao}}</i></li>
+
+                    </ul>
+                    {{/each}}
+
                 </div>
 
             </section>

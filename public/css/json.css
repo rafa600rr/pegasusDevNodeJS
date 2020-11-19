@@ -141,7 +141,7 @@
     border-top-right-radius: 5px;
 }
 
-.api figure li{
+.api li{
     list-style: none;
     line-height: 25px;
     color: rgb(255, 166, 0);
