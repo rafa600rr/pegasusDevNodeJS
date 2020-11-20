@@ -156,5 +156,59 @@ app.post('/actualize', (req, res) => {
 
 });
 
+// API REQUIREMENT STAR WARS - PLEOPLE
+app.get('/swPeople', (req, res) => {
+
+    nodeFetch('https://swapi.dev/api/people/', {method:"GET"})
+    .then(jsonBody => jsonBody.json())
+    .then(listSistem => res.render('swPeople', {list:listSistem}));
+
+});
+
+// API REQUIREMENT STAR WARS - PLANETS
+app.get('/swPlanets', (req, res) => {
+
+    nodeFetch('https://swapi.dev/api/planets/', {method:"GET"})
+    .then(jsonBody => jsonBody.json())
+    .then(listSistem => res.render('swPlanets', {list:listSistem}));
+
+});
+
+// API REQUIREMENT STAR WARS - STARSHIPS
+app.get('/swStarships', (req, res) => {
+
+    nodeFetch('https://swapi.dev/api/starships/', {method:"GET"})
+    .then(jsonBody => jsonBody.json())
+    .then(listSistem => res.render('swStarships', {list:listSistem}));
+
+});
+
+// API REQUIREMENT STAR WARS - FILMS
+app.get('/swFilms', (req, res) => {
+
+    nodeFetch('https://swapi.dev/api/starships/', {method:"GET"})
+    .then(jsonBody => jsonBody.json())
+    .then(listSistem => res.render('swFilms', {list:listSistem}));
+
+});
+
+// API REQUIREMENT STAR WARS - SPECIES
+app.get('/swSpecies', (req, res) => {
+
+    nodeFetch('https://swapi.dev/api/starships/', {method:"GET"})
+    .then(jsonBody => jsonBody.json())
+    .then(listSistem => res.render('swSpecies', {list:listSistem}));
+
+});
+
+// API REQUIREMENT STAR WARS - VEHICLES
+app.get('/swVehicles', (req, res) => {
+
+    nodeFetch('https://swapi.dev/api/vehicles/', {method:"GET"})
+    .then(jsonBody => jsonBody.json())
+    .then(listSistem => res.render('swVehicles', {list:listSistem}));
+
+});
+
 // SERVER
 app.listen(8080);

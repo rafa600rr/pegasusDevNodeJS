@@ -234,15 +234,9 @@ label span:nth-child(3){
     line-height: 10px;
 }
 
-/* SEARCH FIELD */
-.json input[type="search"]{
-    padding: 10px;
-    font-size: 12px;
-}
-
-.json input[type="button"]{
-    padding: 12px;
-    font-size: 12px;
+/* BUTTONS API */
+.buttonsApi button a{
+    font-size: 10px;
 }
 
 /* CARD STAR WARS */

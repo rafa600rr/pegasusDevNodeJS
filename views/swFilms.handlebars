@@ -12,18 +12,30 @@
 
                     <button><a href="/swPeople">pessoas</a></button>
                     <button><a href="/swPlanets">planetas</a></button>
-                    <button><a href="/swStarship">naves</a></button>
+                    <button><a href="/swStarships">naves</a></button>
                     <button><a href="/swFilms">filmes</a></button>
                     <button><a href="/swSpecies">espécies</a></button>
-                    <button><a href="/swVehicles">veícolos</a></button>
+                    <button><a href="/swVehicles">veículos</a></button>
 
                 </div>
 
                 <!-- CARD STAR WARS -->
                 <div class="api">
                     <figure>
-
                         <img src="../img/sistemaSolar/starWars.jpg" id="img">
+
+                        <ul>
+                        {{#each list}}
+                            <h2>{{title}}</h2>
+
+                                <li><b>ID do episódio:</b> <i>{{episode_id}}</i></li>
+                                <li><b>Rastejamento da abertura:</b> <i>{{opening_crawl}}</i></li>
+                                <li><b>Diretor:</b> <i>{{director}}</i></li>
+                                <li><b>Produção:</b> <i>{{producer}}</i></li>
+                                <li><b>Data de lançamento:</b> <i>{{release_date}}</i></li>
+                         
+                        {{/each}}
+                        <ul>
 
                     </figure>
                 </div>
@@ -34,4 +46,4 @@
                 </div>
             </section>
         </main>
-<script src="../js/carousel.js"></script>
+<script src="../js/carousel.js"></script><li><b>Capacidade:</b> <i>{{cargo_capacity}}</i></li>

@@ -207,23 +207,9 @@ label span:nth-child(3){
     background-color: rgb(255, 166, 0);
 }
 
-/* SEARCH FIELD */
-.json input[type="search"]{
-    padding: 12px;
-    font-size: 12px;
-}
-
-.json input[type="button"]{
-    padding: 14px;
+/* BUTTONS API */
+.buttonsApi button a{
     font-size: 10px;
-}
-
-#link{
-    font-size: 10px;
-}
-
-.api{
-    margin: 30px auto;
 }
 
 /* LOGIN SECTION */

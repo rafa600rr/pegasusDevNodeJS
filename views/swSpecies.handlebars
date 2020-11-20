@@ -1,0 +1,52 @@
+<!--  PAGE BODY -->
+        <main class="mainContent
+                    col-desktop-7
+                    col-tablet-8
+                    col-mobile-12">
+
+            <section class="json">
+                <h1>gostaria de saber um pouco mais sobre STAR WARS?</h1>
+
+                <!-- API STAR WARS -->
+                <div class="buttonsApi">
+
+                    <button><a href="/swPeople">pessoas</a></button>
+                    <button><a href="/swPlanets">planetas</a></button>
+                    <button><a href="/swStarships">naves</a></button>
+                    <button><a href="/swFilms">filmes</a></button>
+                    <button><a href="/swSpecies">espécies</a></button>
+                    <button><a href="/swVehicles">veículos</a></button>
+
+                </div>
+
+                <!-- CARD STAR WARS -->
+                <div class="api">
+                    <figure>
+                        <img src="../img/sistemaSolar/starWars.jpg" id="img">
+
+                        <ul>
+                        {{#each list}}
+                            <h2>{{name}}</h2>
+
+                                <li><b>Clasificação:</b> <i>{{classification}}</i></li>
+                                <li><b>Designação:</b> <i>{{designation}}</i></li>
+                                <li><b>Altura média:</b> <i>{{average_height}}</i></li>
+                                <li><b>Cor da pele:</b> <i>{{skin_colors}}</i></li>
+                                <li><b>Cor do cabelo:</b> <i>{{hair_colors}}</i></li>
+                                <li><b>Cor dos olhos:</b> <i>{{eye_colors}}</i></li>
+                                <li><b>Média de vida:</b> <i>{{average_lifespan}}</i></li>
+                                <li><b>Linguagem:</b> <i>{{language}}</i></li>
+                         
+                        {{/each}}
+                        <ul>
+
+                    </figure>
+                </div>
+
+                <!-- ADMIN SECTION -->
+                <div id="link">
+                    <a href="/login">área admin</a>
+                </div>
+            </section>
+        </main>
+<script src="../js/carousel.js"></script><li><b>Capacidade:</b> <i>{{cargo_capacity}}</i></li>

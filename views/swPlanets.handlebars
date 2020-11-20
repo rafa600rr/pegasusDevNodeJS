@@ -12,18 +12,33 @@
 
                     <button><a href="/swPeople">pessoas</a></button>
                     <button><a href="/swPlanets">planetas</a></button>
-                    <button><a href="/swStarship">naves</a></button>
+                    <button><a href="/swStarships">naves</a></button>
                     <button><a href="/swFilms">filmes</a></button>
                     <button><a href="/swSpecies">espécies</a></button>
-                    <button><a href="/swVehicles">veícolos</a></button>
+                    <button><a href="/swVehicles">veículos</a></button>
 
                 </div>
 
                 <!-- CARD STAR WARS -->
                 <div class="api">
                     <figure>
-
                         <img src="../img/sistemaSolar/starWars.jpg" id="img">
+
+                        <ul>
+                        {{#each list}}
+                            <h2>{{name}}</h2>
+
+                                <li><b>Período de rotação:</b> <i>{{rotation_period}}</i></li>
+                                <li><b>Órbita:</b> <i>{{orbital_period}}</i></li>
+                                <li><b>Díamêtro:</b> <i>{{diameter}}</i></li>
+                                <li><b>Clima:</b> <i>{{climate}}</i></li>
+                                <li><b>Gravidade:</b> <i>{{gravity}}</i></li>
+                                <li><b>Terreno:</b> <i>{{terrain}}</i></li>
+                                <li><b>Água da superficie:</b> <i>{{surface_water}}</i></li>
+                                <li><b>População:</b> <i>{{population}}</i></li>
+
+                        {{/each}}
+                        <ul>
 
                     </figure>
                 </div>

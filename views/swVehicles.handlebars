@@ -1,0 +1,55 @@
+<!--  PAGE BODY -->
+        <main class="mainContent
+                    col-desktop-7
+                    col-tablet-8
+                    col-mobile-12">
+
+            <section class="json">
+                <h1>gostaria de saber um pouco mais sobre STAR WARS?</h1>
+
+                <!-- API STAR WARS -->
+                <div class="buttonsApi">
+
+                    <button><a href="/swPeople">pessoas</a></button>
+                    <button><a href="/swPlanets">planetas</a></button>
+                    <button><a href="/swStarships">naves</a></button>
+                    <button><a href="/swFilms">filmes</a></button>
+                    <button><a href="/swSpecies">espécies</a></button>
+                    <button><a href="/swVehicles">veículos</a></button>
+
+                </div>
+
+                <!-- CARD STAR WARS -->
+                <div class="api">
+                    <figure>
+                        <img src="../img/sistemaSolar/starWars.jpg" id="img">
+
+                        <ul>
+                        {{#each list}}
+                            <h2>{{name}}</h2>
+
+                                <li><b>Modelo:</b> <i>{{model}}</i></li>
+                                <li><b>Fabricante:</b> <i>{{manufacturer}}</i></li>
+                                <li><b>Valor:</b> <i>{{cost_in_credits}}</i></li>
+                                <li><b>Comprimento:</b> <i>{{length}}</i></li>
+                                <li><b>Velocidade máxima:</b> <i>{{max_atmosphering_speed}}</i></li>
+                                <li><b>Equipe técnica:</b> <i>{{crew}}</i></li>
+                                <li><b>Passageiros:</b> <i>{{passengers}}</i></li>
+                                <li><b>Capacidade:</b> <i>{{cargo_capacity}}</i></li>
+                                <li><b>Consumíveis:</b> <i>{{consumables}}</i></li>
+                                <li><b>Avaliação hiperdrive:</b> <i>{{hyperdrive_rating}}</i></li>
+                                <li><b>Aula de veículos:</b> <i>{{vehicles_class}}</i></li>
+                         
+                        {{/each}}
+                        <ul>
+
+                    </figure>
+                </div>
+
+                <!-- ADMIN SECTION -->
+                <div id="link">
+                    <a href="/login">área admin</a>
+                </div>
+            </section>
+        </main>
+<script src="../js/carousel.js"></script><li><b>Capacidade:</b> <i>{{cargo_capacity}}</i></li>

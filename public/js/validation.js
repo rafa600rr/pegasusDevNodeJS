@@ -148,7 +148,7 @@ function validaApi(){
             document.getElementById("h4").innerHTML = "Este campo deve ser preenchido!";
             return false;
         }else{
-            document.getElementById("nastarCompositionme").style.border = "1px solid green";
+            document.getElementById("starComposition").style.border = "1px solid green";
         }
 
     return retorno;
