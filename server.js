@@ -159,7 +159,7 @@ app.post('/actualize', (req, res) => {
 // API REQUIREMENT STAR WARS - PLEOPLE
 app.get('/swPeople', (req, res) => {
 
-    nodeFetch('https://swapi.dev/api/people/', {method:"GET"})
+    nodeFetch('https://swapi.dev/api/people', {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('swPeople', {list:listSistem}));
 
@@ -211,4 +211,4 @@ app.get('/swVehicles', (req, res) => {
 });
 
 // SERVER
-app.listen(8080);
+app.listen(4431);

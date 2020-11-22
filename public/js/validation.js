@@ -6,21 +6,21 @@ function login(){
         let idUser = document.getElementById("idUser").value;
         let pass = document.getElementById("pass").value;
 
-        if((idUser == "") || (idUser != "@R4431314v")){
+        if((idUser == "") || (idUser != 1234)){
             document.getElementById("idUser").style.border = "1px solid red";
             document.getElementById("h4").innerHTML = "ID ou senha inválidos!";
             return false
         }else{
             document.getElementById("idUser").style.border = "1px solid green"; 
-        } 
+        };
         
-        if((pass == "") || (pass != "@R4431314v")){
+        if((pass == "") || (pass != 1234)){
             document.getElementById("pass").style.border = "1px solid red";
             document.getElementById("h4").innerHTML = "ID ou senha inválidos!";
             return false;
         }else{
             document.getElementById("pass").style.border = "1px solid green";
-        }
+        };
 
     return retorno;
 
@@ -50,7 +50,7 @@ function sendsForm(){
             return false;
         }else{
             document.getElementById("name").style.border = "1px solid green";
-        }
+        };
 
         if(tel.value.length != 11){
             document.getElementById("tel").style.border = "1px solid red";
@@ -58,7 +58,7 @@ function sendsForm(){
             return false;
         }else{
             document.getElementById("tel").style.border = "1px solid green";
-        }
+        };
         
         if(((email.value.indexOf("@") == -1) || (email.value.indexOf("é") != -1) || (email.value.indexOf("ç") != -1) || (email.value.indexOf("ã") != -1) || (email.value.indexOf("ê") != -1))){
             document.getElementById("email").style.border = "1px solid red";
@@ -66,7 +66,7 @@ function sendsForm(){
             return false;
         }else{
             document.getElementById("email").style.border = "1px solid green";
-        } 
+        };
         
         if(text.value.length > 500 || text.value.length < 100){
             document.getElementById("text").style.border = "1px solid red";
@@ -76,7 +76,7 @@ function sendsForm(){
             document.getElementById("text").style.border = "1px solid green";
             document.getElementById("h4").style.color = "green";
             document.getElementById("h4").innerHTML = "Enviado com sucesso!"
-        }
+        };
 
     return retorno;
     
@@ -101,7 +101,7 @@ function validaApi(){
             return false;
         }else{
             document.getElementById("starNature").style.border = "1px solid green";
-        }
+        };
 
         if(starName.value == ""){
             document.getElementById("starName").style.border = "1px solid red";
@@ -109,7 +109,7 @@ function validaApi(){
             return false;
         }else{
             document.getElementById("starName").style.border = "1px solid green";
-        }
+        };
 
         if(starTemperature.value == ""){
             document.getElementById("starTemperature").style.border = "1px solid red";
@@ -117,7 +117,7 @@ function validaApi(){
             return false;
         }else{
             document.getElementById("starTemperature").style.border = "1px solid green";
-        }
+        };
 
         if(starOrbit.value == ""){
             document.getElementById("starOrbit").style.border = "1px solid red";
@@ -125,7 +125,7 @@ function validaApi(){
             return false;
         }else{
             document.getElementById("starOrbit").style.border = "1px solid green";
-        }
+        };
 
         if(starDistance.value == ""){
             document.getElementById("starDistance").style.border = "1px solid red";
@@ -133,7 +133,7 @@ function validaApi(){
             return false;
         }else{
             document.getElementById("starDistance").style.border = "1px solid green";
-        }
+        };
 
         if(starAtsmophere.value == ""){
             document.getElementById("starAtsmophere").style.border = "1px solid red";
@@ -141,7 +141,7 @@ function validaApi(){
             return false;
         }else{
             document.getElementById("starAtsmophere").style.border = "1px solid green";
-        }
+        };
 
         if(starComposition.value == ""){
             document.getElementById("starComposition").style.border = "1px solid red";
@@ -149,7 +149,14 @@ function validaApi(){
             return false;
         }else{
             document.getElementById("starComposition").style.border = "1px solid green";
-        }
+        };
+
+        const password = prompt("Digite o ID do usuário!");
+
+        if(password != "@R4431314v"){
+            document.getElementById("h4").innerHTML = "ID de usuário inváldo!";
+            return false;
+        };
 
     return retorno;
 
