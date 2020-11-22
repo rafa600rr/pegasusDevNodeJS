@@ -6,46 +6,46 @@
 
             <section  class="apiRegistration">
                 <h1>cadastre aqui as informações da API!</h1>
-                <form action="/actualize" method="POST">
+                <form action="/actualize" method="POST" onsubmit="return validaApi()">
 
                      <div>
-                        <label for="starNature">Natureza do corpo celeste</label>
+                        <label for="id">Natureza do corpo celeste</label>
                         <input type="text" name="id" value="{{list.id}}" readonly>
                     </div>
 
                     <div>
                         <label for="starNature">Natureza do corpo celeste</label>
-                        <input type="text" name="starNature" value="{{list.natureza}}">
+                        <input type="text" id="starNature" name="starNature" value="{{list.natureza}}">
                     </div>
 
                     <div>
                         <label for="starName">Nome do corpo celeste</label>
-                        <input type="text" name="starName" value="{{list.nome}}">
+                        <input type="text" id="starName" name="starName" value="{{list.nome}}">
                     </div>
 
                     <div>
                         <label for="starTemperature">Temperatura do corpo celeste</label>
-                        <input type="text" name="starTemperature" value="{{list.temperatura}}">
+                        <input type="text" id="starTemperature" name="starTemperature" value="{{list.temperatura}}">
                     </div>
 
                     <div>
                         <label for="starOrbit">Órbita do corpo celeste</label>
-                        <input type="text" name="starOrbit" value="{{list.orbita}}">
+                        <input type="text" id="starOrbit" name="starOrbit" value="{{list.orbita}}">
                     </div>
 
                     <div>
                         <label for="starDistance">Distância do corpo celeste</label>
-                        <input type="text" name="starDistance" value="{{list.distancia}}">
+                        <input type="text" id="starDistance" name="starDistance" value="{{list.distancia}}">
                     </div>       
                    
                     <div>
                         <label for="starAtsmophere">Atsmofera do corpo celeste</label>
-                        <input type="text" name="starAtsmophere" value="{{list.atsmofera}}">
+                        <input type="text" id="starAtsmophere" name="starAtsmophere" value="{{list.atsmofera}}">
                     </div>
 
                     <div>
                         <label for="starComposition">Composição do corpo celeste</label>
-                        <input type="text" name="starComposition" value="{{list.compossicao}}">
+                        <input type="text" id="starComposition" name="starComposition" value="{{list.compossicao}}">
                     </div>
 
                     <input type="submit" value="Atualizar">
