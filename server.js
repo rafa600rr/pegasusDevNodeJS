@@ -50,7 +50,7 @@ app.get('/registerAPI', (req, res) =>{
 
 app.get('/listAPI', (req, res) => {
 
-    nodeFetch('http://localhost:3000/sistemaSolar', {method:"GET"})
+    nodeFetch('http://localhost:4432/sistemSolar', {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('listAPI', {list:listSistem}));
 
@@ -67,16 +67,16 @@ app.post('/register', (req, res) => {
     let starComposition = req.body.starComposition;
 
     let registerSistem = {
-        'natureza':starNature,
-        'nome':starName,
-        'temperatura':starTemperature,
-        'orbita':starOrbit,
-        'distancia':starDistance,
-        'atsmofera':starAtsmophere,
-        'compossicao':starComposition,
+        'starNature':starNature,
+        'starName':starName,
+        'starTemperature':starTemperature,
+        'starOrbit':starOrbit,
+        'starDistance':starDistance,
+        'starAtsmophere':starAtsmophere,
+        'starComposition':starComposition,
     };
 
-    nodeFetch('http://localhost:3000/sistemaSolar',{
+    nodeFetch('http://localhost:4432/sistemSolar',{
         method:"POST",
         body: JSON.stringify(registerSistem),
         headers: {'Content-Type' : 'application/json'}
@@ -88,7 +88,7 @@ app.post('/register', (req, res) => {
 
 app.get('/removeAPI', (req, res) => {
 
-    nodeFetch('http://localhost:3000/sistemaSolar', {method:"GET"})
+    nodeFetch('http://localhost:4432/sistemSolar', {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('removeAPI', {list:listSistem}));
 
@@ -98,7 +98,7 @@ app.get('/remove/:id', (req, res) => {
 
     let id = req.params.id;
 
-    nodeFetch('http://localhost:3000/sistemaSolar/'+id, {
+    nodeFetch('http://localhost:4432/sistemSolar/'+id, {
         method:"DELETE",
         headers: {'Content-Type' : 'application/json'}
     })
@@ -109,7 +109,7 @@ app.get('/remove/:id', (req, res) => {
 
 app.get('/editAPI', (req, res) => {
 
-    nodeFetch('http://localhost:3000/sistemaSolar', {method:"GET"})
+    nodeFetch('http://localhost:4432/sistemSolar', {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('editAPI', {list:listSistem}));
 
@@ -118,7 +118,7 @@ app.get('/editAPI', (req, res) => {
 app.get('/edit/:id', (req, res) => {
     let id = req.params.id;
 
-    nodeFetch('http://localhost:3000/sistemaSolar/'+id, {method:"GET"})
+    nodeFetch('http://localhost:4432/sistemSolar/'+id, {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('edit', {list:listSistem}));
 
@@ -136,17 +136,17 @@ app.post('/actualize', (req, res) => {
     let id = req.body.id;
 
     let registerSistem = {
-        'natureza':starNature,
-        'nome':starName,
-        'temperatura':starTemperature,
-        'orbita':starOrbit,
-        'distancia':starDistance,
-        'atsmofera':starAtsmophere,
-        'compossicao':starComposition,
+        'starNature':starNature,
+        'starName':starName,
+        'starTemperature':starTemperature,
+        'starOrbit':starOrbit,
+        'starDistance':starDistance,
+        'starAtsmophere':starAtsmophere,
+        'starComposition':starComposition,
         'id':id,
     };
 
-    nodeFetch('http://localhost:3000/sistemaSolar/'+id,{
+    nodeFetch('http://localhost:4432/sistemSolar/'+id,{
         method:"PUT",
         body: JSON.stringify(registerSistem),
         headers: {'Content-Type' : 'application/json'}

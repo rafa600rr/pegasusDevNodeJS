@@ -1,0 +1,24 @@
+{
+  "sistemSolar": [
+    {
+      "starNature": "Planeta",
+      "starName": "Terra",
+      "starTemperature": "18 °C",
+      "starOrbit": "365 dias",
+      "starDistance": "149 600 000 km",
+      "starAtsmophere": "Oxigênio",
+      "starComposition": "Água",
+      "id": 1
+    },
+    {
+      "starNature": "Planeta",
+      "starName": "Marte",
+      "starTemperature": " De -125 à 22 °C",
+      "starOrbit": "687 dias terrestres",
+      "starDistance": "230 000 000 km",
+      "starAtsmophere": "Dióxido de carbono",
+      "starComposition": "Basalto vulcânico",
+      "id": 2
+    }
+  ]
+}
