@@ -13,7 +13,7 @@
 }
 
 header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     background-color: #000;
 }
@@ -50,6 +50,10 @@ body, html{
 }
 
 /* CAROUSEL */
+.carousel{
+    position: relative;
+}
+
 .imgCarousel{
     display: none;
 }
@@ -63,10 +67,9 @@ body, html{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* position: absolute; */
-    /* top: 50%; */
-    /* transform: translateY(-600%); */
-    /* opacity: 0; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .buttonActions button{
