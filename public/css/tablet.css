@@ -96,24 +96,19 @@ label span:nth-child(3){
 .movelSideMenu{
     display: none;
     position: fixed;
-    top: 60px;
-    right: 0;
-    width: 25%;
-    height: 100%;
+    top: 20px;
+    right: 55px;
+    width: 210px;
     background-color: #000;
 }
 
-.movelSideMenu li{
-    font-style: none;
-}
-
 .movelSideMenu a{
-    display: block;
+    font-size: 12px;
     line-height: 30px;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 5px;
     font-family: principal;
     color: rgb(255, 166, 0);
-    text-align: center;
     text-decoration: none;
 }
 

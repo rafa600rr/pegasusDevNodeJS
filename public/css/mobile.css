@@ -33,6 +33,14 @@ h2{
     padding: 5px;
 }
 
+P{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    font-size: 12px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
 /* DESKTOP MENU */
 .desktopMenuNav{
     display: none;
@@ -94,26 +102,19 @@ label span:nth-child(3){
 .movelSideMenu{
     display: none;
     position: fixed;
-    top: 36px;
-    right: 0;
-    width: 35%;
-    height: 100%;
-    margin-left: 100px;
+    top: 8px;
+    right: 55px;
+    width: 130px;
     background-color: #000;
 }
 
-.movelSideMenu li{
-    font-style: none;
-}
-
 .movelSideMenu a{
-    display: block;
+    font-size: 8px;
     line-height: 30px;
     padding: 5px;
+    border-radius: 5px;
     font-family: principal;
-    font-size: 10px;
     color: rgb(255, 166, 0);
-    text-align: center;
     text-decoration: none;
 }
 
