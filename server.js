@@ -50,7 +50,7 @@ app.get('/registerAPI', (req, res) =>{
 
 app.get('/listAPI', (req, res) => {
 
-    nodeFetch('http://54.207.196.78:4432/sistemSolar', {method:"GET"})
+    nodeFetch('http://54.207.196.78:4432/systemSolar', {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('listAPI', {list:listSistem}));
 
@@ -76,7 +76,7 @@ app.post('/register', (req, res) => {
         'starComposition':starComposition,
     };
 
-    nodeFetch('http://54.207.196.78:4432/sistemSolar',{
+    nodeFetch('http://54.207.196.78:4432/systemSolar',{
         method:"POST",
         body: JSON.stringify(registerSistem),
         headers: {'Content-Type' : 'application/json'}
@@ -88,7 +88,7 @@ app.post('/register', (req, res) => {
 
 app.get('/removeAPI', (req, res) => {
 
-    nodeFetch('http://54.207.196.78:4432/sistemSolar', {method:"GET"})
+    nodeFetch('http://54.207.196.78:4432/systemSolar', {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('removeAPI', {list:listSistem}));
 
@@ -98,7 +98,7 @@ app.get('/remove/:id', (req, res) => {
 
     let id = req.params.id;
 
-    nodeFetch('http://54.207.196.78:4432/sistemSolar/'+id, {
+    nodeFetch('http://54.207.196.78:4432/systemSolar/'+id, {
         method:"DELETE",
         headers: {'Content-Type' : 'application/json'}
     })
@@ -109,7 +109,7 @@ app.get('/remove/:id', (req, res) => {
 
 app.get('/editAPI', (req, res) => {
 
-    nodeFetch('http://54.207.196.78:4432/sistemSolar', {method:"GET"})
+    nodeFetch('http://54.207.196.78:4432/systemSolar', {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('editAPI', {list:listSistem}));
 
@@ -118,7 +118,7 @@ app.get('/editAPI', (req, res) => {
 app.get('/edit/:id', (req, res) => {
     let id = req.params.id;
 
-    nodeFetch('http://54.207.196.78:4432/sistemSolar/'+id, {method:"GET"})
+    nodeFetch('http://54.207.196.78:4432/systemSolar/'+id, {method:"GET"})
     .then(jsonBody => jsonBody.json())
     .then(listSistem => res.render('edit', {list:listSistem}));
 
@@ -146,7 +146,7 @@ app.post('/actualize', (req, res) => {
         'id':id,
     };
 
-    nodeFetch('http://54.207.196.78:4432/sistemSolar/'+id,{
+    nodeFetch('http://54.207.196.78:4432/systemSolar/'+id,{
         method:"PUT",
         body: JSON.stringify(registerSistem),
         headers: {'Content-Type' : 'application/json'}
