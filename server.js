@@ -1,8 +1,6 @@
 const express = require("express");
 const exHandlebars = require("express-handlebars");
-const bodyParser  = require("body-parser");
 const nodeFetch = require("node-fetch");
-const { json } = require("body-parser");
 
 const app = express();
 
