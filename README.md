@@ -20,3 +20,5 @@ _DELETE_
 _PUT_
 
 O layout da página é feita na cor laranja e preta.
+
+VISUALIZE ESTA PAGINA NESSTE ENDEREÇO ->  http:54.233.246.24:4431/inicio
