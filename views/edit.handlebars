@@ -6,10 +6,11 @@
 
             <section  class="apiRegistration">
                 <h1>cadastre aqui as informações da API!</h1>
+                <h4 id="h4"></h4>
                 <form action="/actualize" method="POST" onsubmit="return validaApi()">
 
                      <div>
-                        <label for="id">Natureza do corpo celeste</label>
+                        <label for="id">ID do corpo celeste</label>
                         <input type="text" name="id" value="{{list.id}}" readonly>
                     </div>
 
@@ -46,6 +47,11 @@
                     <div>
                         <label for="starComposition">Composição do corpo celeste</label>
                         <input type="text" id="starComposition" name="starComposition" value="{{list.starComposition}}">
+                    </div>
+
+                    <div>
+                        <label for="starComposition">ID de usuário</label>
+                        <input type="password" id="password" name="password" placeholder="ID de usuário">
                     </div>
 
                     <input type="submit" value="Atualizar">

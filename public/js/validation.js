@@ -94,6 +94,7 @@ function validaApi(){
     let starDistance = document.getElementById("starDistance");
     let starAtsmophere = document.getElementById("starAtsmophere");
     let starComposition = document.getElementById("starComposition");
+    let password = document.getElementById("password");
 
         if(starNature.value == ""){
             document.getElementById("starNature").style.border = "1px solid red";
@@ -151,9 +152,8 @@ function validaApi(){
             document.getElementById("starComposition").style.border = "1px solid green";
         };
 
-        const password = prompt("Digite o ID do usuário!");
-
-        if(password != "@R4431314v"){
+        if(password.value != "@R4431314v"){
+            document.getElementById("password").style.border = "1px solid red";
             document.getElementById("h4").innerHTML = "ID de usuário inváldo!";
             return false;
         };
