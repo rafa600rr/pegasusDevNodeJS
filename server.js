@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 // ROTES
-app.get('/inicio', (req, res) =>{
+app.get('/', (req, res) =>{
 
     res.render('index');
 });
